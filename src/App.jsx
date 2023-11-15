@@ -1,25 +1,15 @@
 // App.js
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react"
+import { Test } from "./Test"
 
 const App = () => {
-  useEffect(() => {
-    if (window.google && window.google.translate) {
-      new window.google.translate.TranslateElement(
-        { pageLanguage: 'en' },
-        'google_translate_element'
-      );
-    }
-  }, []);
-
   return (
     <div>
-      {/* Your app content */}
-      <p>Welcome to my React app!</p>
+      <p>Hello Friends</p>
 
-      {/* Google Translate element */}
-      <div id="google_translate_element"></div>
+      <Test />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
